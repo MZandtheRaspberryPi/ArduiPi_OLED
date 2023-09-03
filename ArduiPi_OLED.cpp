@@ -357,6 +357,7 @@ boolean ArduiPi_OLED::init(int8_t DC, int8_t RST, int8_t CS, uint8_t OLED_TYPE)
   if (!select_oled(OLED_TYPE))
     return false;
 
+  /*
   // Init & Configure Raspberry PI SPI
   bcm2835_spi_begin(cs);
   bcm2835_spi_setBitOrder(BCM2835_SPI_BIT_ORDER_MSBFIRST);      
@@ -372,6 +373,8 @@ boolean ArduiPi_OLED::init(int8_t DC, int8_t RST, int8_t CS, uint8_t OLED_TYPE)
   bcm2835_gpio_fsel(rst, BCM2835_GPIO_FSEL_OUTP);
 
   return ( true);
+  */
+  return false;
 }
 
 // initializer for I2C - we only indicate the reset pin and OLED type !

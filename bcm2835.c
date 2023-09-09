@@ -26,6 +26,7 @@
 #define BCK2835_LIBRARY_BUILD
 #include "bcm2835.h"
 
+
 /* This define enables a little test program (by default a blinking output on pin RPI_GPIO_PIN_11)
 // You can do some safe, non-destructive testing on any platform with:
 // gcc bcm2835.c -D BCM2835_TEST
@@ -2179,6 +2180,8 @@ int bcm2835_close(void)
     return 1; /* Success */
 }    
 
+
+
 #ifdef BCM2835_TEST
 /* this is a simple test program that prints out what it will do rather than 
 // actually doing it
@@ -2259,6 +2262,5 @@ int main(int argc, char **argv)
     return 0;
 }
 #endif
-
 
 
